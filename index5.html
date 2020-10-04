@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Primeiros passos - Introduão ao DOM - JavaScript</title>
+    <style>
+        body{
+            background-color: burlywood;
+            color: black;
+            font: normal 18pt Ariel;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM - [h1]</h1>
+    <p>Aqui vai o resultado - [p - índice 0]</p>
+    <p>Aprendendo a usar o <strong>Dom </strong> em JavaScript - ÁRVORE DOM! - [p - índice 1] </p>
+    <h2>window - document - html - head / body. Em body: h1 - p - p - h2 - div . Em head: meta - title. [h2] </h2>
+
+    <div id="msg">Clique Aqui - [div]</div>
+
+    <script>
+
+        // ACESSO A VÁRIOS COMPONENTES E NAVEGAÇÃO ENTRE OS ELEMENTOS - SELEÇÃO!
+
+        //window.document.write('Olá, mundo')// escreve mensagem - adicionando componentes
+
+        //window.document.write(window.document.charset) // mostra os caracteres UTF-8: configurações de página
+
+        //window.document.write(window.navigator.appName) // Mostra o nagedador
+
+        //window.document.write(window.document.URL) // mostr url do navegador
+
+        // O acesso aos elementos no DOM pode se dá por:
+        /* 
+        Marca = getElementsByTagName() = seleciona mais de um objetos
+
+        ID = getElementById() // pega-se a div e dá um id='msg' e depois aplica-se uma var:
+        var d = window.document.getElementById('msg')
+
+        Nome = getElementsByName()
+
+        Classe = getElementsByClassName()
+
+        Seletor = GetelementSelector()
+
+        */ 
+
+//Marca = getElementsByTagName() = seleciona mais de um objetos, portanto é preciso ser específico [aqui: 0, 1, 2... como índice do elemento, se existe mais de um] para indicar o q se deseja.selecionar.
+
+        /*
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim:  ' + p1.innerText) // mostra resultado: conteúdo do p [0] [1]...
+        p1.style.color = 'blue' // mudando a cor do texto no p indicado */ 
+
+        // criando variável pro corpo
+        /*var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        corpo.style.background = 'red'
+        p1.style.color= 'blue' 
+        */ 
+
+        // colocando innerHtml
+        //var corpo = window.document.body
+        //var p1 = window.document.getElementsByTagName('p')[1]
+        //document.write(p1.innerHTML)
+        //window.alert(p1,innerHtml)
+        // innerText - pega apenas o texto sem as filhas
+        // innerHtml - pega o texto e as filhas
+
+        // adição da id na div
+
+        //var d = window.document.getElementById('msg') // pode omitir o 'window' 
+        //d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+
+        // usando o comando completo na div:
+       // window.document.getElementById('msg').innerText = 'Olá! Estou aguardando...'
+
+        // posso selecionar por Name:
+        //var d = window.document.getElementsByName('msg')[0]
+        //d. innerText = 'Olá!...'
+
+        //window.document.getElementsByClassName('')
+
+        // por querySeletor:
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.querySelector('div#msg') // # usando pra div e ponto (.) para class
+        d.style.background = 'blue'
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
