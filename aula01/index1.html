@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Inciciando a programação em JavaScript I- Gil</title>
+    <style>
+        body {
+            background: rgb(142, 113, 170);
+            color: white;
+            font: normal 20pt Ariel;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        p,
+        h2 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo! Eu Sou Gilvanete. E eu amo Tecnologia! Sou Desenvolvedora JS.</h1>
+    <p>Já me livrei da maldição!</p>
+    <p>Formatando minha realidade para 5D. Amando JavaScript!</p>
+    <h2>Transição de carreira!</h2>
+
+    <script>
+
+        // parseInt - para números inteiros
+        var n1 = Number.parseInt(window.prompt('Digite um número: '));
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '));
+        var s = n1 + n2;
+        window.alert('A soma dos valores é: ' + s);
+        // (number + number) para adição
+        // (string + string) para concatenar
+
+        // parseFloat - para números decimais - reais
+        /*
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '));
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '));
+        */
+        // Number - se eu quiser que o JavaScript se vire pra entender o tipo de número
+
+        /*
+        var n1 = Number(window.prompt('Digite um número: '));
+        var n2 = Number(window.prompt('Digite outro número: '));
+        */
+
+        // String(n) ou n.toString(x) - convertendo de número para string
+
+        /*
+        window.alert('A soma dos valores é: ' + s.toString());
+        
+        ou
+
+        window.alert('A soma dos valores é: ' + String(s));
+
+        */
+        // USANDO O TERMINAL NODE E COMPARANDO
+        // Template  String - FORMATANDO STRINGS
+
+        //.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+
+        /*
+        var s = 'JavaScript'
+        'Eu estou aprendendo s' // não faz interpolação
+
+        'Eu estou aprendendo' + s // usa concatenação
+
+        `Eu estou aprendendo ${s}` // usa template string (crase)
+
+        var s = 'JavaScript'
+        s.lenght()        // quantos caracteres
+        s.toUpperCase()   // tudo para MAIÚSCULA
+        s.toLowerCase()   // tudo para minúscula
+
+        
+
+
+
+    </script>
+
+</body>
+  
+</html>

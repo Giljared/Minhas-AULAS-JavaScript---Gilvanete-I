@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Criando considerações para países</title>
+</head>
+
+<body>
+    <h1>Sistema de origem de países</h1>
+    Qual seu país?  <input type="text" name="local" class="local" placeholder="Digite o nome do país"> 
+    <input type="button" value="Verificar origem" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+        
+
+        function verificar (){
+            const txtl = document.getElementsByClassName('.local');
+            const res = document.querySelector('div#res');
+            const pais = Brasil(txtl.value);
+            res.innerHTML = `Seu país atual é ${pais}`;
+
+        }
+        if (pais != 'Brasil') {
+            return (`Vivendo em ${pais}`)
+
+            //console.log('Você é Estrangeiro')
+        } else {
+            //console.log('Você é Brasileiro')
+        }
+    </script>
+
+</body>
+
+</html>

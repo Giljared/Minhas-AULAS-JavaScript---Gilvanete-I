@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Soma de dois números (inteiros / Reais) - JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(52, 61, 61);
+            color: white;
+            font: normal 20pt Ariel;
+        }
+        h1 {
+            color: rgb(22, 45, 255);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Olá, mundo! Eu sou Gilvanete - Desenvolvedora JavaScript!</h1>
+    <p>Já me livrei da maldição! Hehehehhe</p>
+    <p>A variável 'nome' recebe o resultado do 'prompt' que vai aparecer na tela</p>
+
+    <h2>Usando um pouco o 'node' - Sensacional!</h2>
+    <h2>Formatando Strings</h2>
+    <h2>Placeholder</h2>
+    <p>Usando crase (``) - `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`<p>
+
+    <script>
+        //var n1 = window.prompt('Digite um número: ')
+        //var n2 = window.prompt('Digite outro número: ')
+        /*
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) // parseInt - para números inteiros
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))// parseInt - para números inteiros
+        */
+
+        /*
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // parseFloat - para números reais
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))// parseFloat - para números reais
+        */
+
+        var n1 = Number(window.prompt('Digite um número: ')) // Number - para o js se virar!
+        var n2 = Number(window.prompt('Digite outro número: '))// parseFloat - para o js se virar!
+
+        var s = n1 + n2 // é preciso configurar n1 e n2 para número inteiro
+
+        /*
+        window.alert ('A soma dos valores é: ' + s)// concatenação
+        */
+
+        // Se eu quiser que o meu 's' seja considerado uma 'string'
+
+        /*
+        window.alert ('A soma dos valores é: ' + s.toString())
+
+        ou
+
+        window.alert ('A soma dos valores é: ' + String(s))
+        */
+        //DEIXANDO O CÓDIGO LIMPO:
+
+        window.alert(`A Soma entre ${n1} e ${n2} é igual a ${s}`)
+
+
+
+        // number  +  number = adição
+        // string  +  string = concatenação
+
+
+        // OBSERVAÇÕES ÚTEIS:
+        // não faz interpolação - 'Eu estou apredendo s' 
+        // usa concatenação - 'Eu estou apredendo' + s 
+        // usa templete string - `Eu estou apredendo ${s}`
+
+        // USO DE:
+        /* s.lenght = quantos caracteres
+        s.toUpperCase() = tudo MAIÚSCULO
+        s.LoweCase() - tudo minúsculo
+
+        
+
+        
+    </script>
+    
+</body>
+</html>
